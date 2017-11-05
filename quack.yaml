@@ -8,6 +8,7 @@ profiles:
       'quack:Dependencies/CryptoSwift/quack.yaml:init',
       'quack:Dependencies/GzipSwift/quack.yaml:init',
       'quack:Dependencies/SQLCipher/quack.yaml:init',
+      'quack:Dependencies/SQLite.swift/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
   clean:
@@ -16,5 +17,6 @@ profiles:
       'quack:Dependencies/CryptoSwift/quack.yaml:clean',
       'quack:Dependencies/GzipSwift/quack.yaml:clean',
       'quack:Dependencies/SQLCipher/quack.yaml:clean',
+      'quack:Dependencies/SQLite.swift/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]

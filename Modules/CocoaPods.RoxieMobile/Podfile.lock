@@ -2,15 +2,20 @@ PODS:
   - Alamofire (4.5.1)
   - CryptoSwift (0.8.0)
   - GzipSwift (4.0.2)
+  - SQLCipher (3.4.1):
+    - SQLCipher/standard (= 3.4.1)
   - SQLCipher/common (3.4.1)
   - SQLCipher/standard (3.4.1):
     - SQLCipher/common
+  - SQLite.swift/SQLCipher (0.11.4):
+    - SQLCipher (>= 3.4.0)
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.5.1.podspec`)
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.2.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
+  - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -21,13 +26,16 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/GzipSwift/Pod-4.0.2.podspec
   SQLCipher:
     :path: ../../Dependencies/SQLCipher/Pod-3.4.1.podspec
+  SQLite.swift:
+    :path: ../../Dependencies/SQLite.swift/Pod-0.11.4.podspec
 
 SPEC CHECKSUMS:
   Alamofire: af55e9878c319cf97151a0c2619d323c464958a5
   CryptoSwift: 3c1a0034f30c3d0b8f34acadd858c09e2320b7d9
   GzipSwift: a21504b80c2110696b661455893f41beb2014f31
   SQLCipher: fbdf4f2c53652da70cb240ecb45368bbbaa9496e
+  SQLite.swift: d769a4dfedd775a238ee43eee129c32c094c2776
 
-PODFILE CHECKSUM: a6f0412da861dd18c2db74118ac6a21acd340259
+PODFILE CHECKSUM: cd5eeaa5c307b450737182fb3841c83d79afd6b0
 
 COCOAPODS: 1.4.0.beta.2
