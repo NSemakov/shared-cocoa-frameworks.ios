@@ -7,6 +7,7 @@ profiles:
       'quack:Dependencies/Alamofire/quack.yaml:init',
       'quack:Dependencies/CryptoSwift/quack.yaml:init',
       'quack:Dependencies/GzipSwift/quack.yaml:init',
+      'quack:Dependencies/SQLCipher/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
   clean:
@@ -14,5 +15,6 @@ profiles:
       'quack:Dependencies/Alamofire/quack.yaml:clean',
       'quack:Dependencies/CryptoSwift/quack.yaml:clean',
       'quack:Dependencies/GzipSwift/quack.yaml:clean',
+      'quack:Dependencies/SQLCipher/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]

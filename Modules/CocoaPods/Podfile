@@ -8,7 +8,8 @@ workspace 'DummyProject/Dummy.xcworkspace'
 target 'DummyFramework' do
   project 'DummyProject/Dummy.xcodeproj'
 
-  pod 'Alamofire',   '~> 4.5'
-  pod 'CryptoSwift', '~> 0.8'
-  pod 'GzipSwift',   '~> 4.0'
+  pod 'Alamofire',          '~> 4.5'
+  pod 'CryptoSwift',        '~> 0.8'
+  pod 'GzipSwift',          '~> 4.0'
+  pod 'SQLCipher/standard', '~> 3.4'
 end
