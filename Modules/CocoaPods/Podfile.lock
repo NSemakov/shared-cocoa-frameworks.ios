@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.5.1)
   - CryptoSwift (0.8.0)
+  - GzipSwift (4.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - CryptoSwift (~> 0.8)
+  - GzipSwift (~> 4.0)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
+  GzipSwift: 3faa3c3aece7cb0b0112c5e0c2f433164f683ae9
 
-PODFILE CHECKSUM: 5214856ce9364807b6a95ec90537778fc2cc40ff
+PODFILE CHECKSUM: 5370302201343648fbeb21acc968ad1cb29d0d4b
 
 COCOAPODS: 1.4.0.beta.2

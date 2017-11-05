@@ -6,11 +6,13 @@ profiles:
     tasks: [
       'quack:Dependencies/Alamofire/quack.yaml:init',
       'quack:Dependencies/CryptoSwift/quack.yaml:init',
+      'quack:Dependencies/GzipSwift/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
   clean:
     tasks: [
       'quack:Dependencies/Alamofire/quack.yaml:clean',
       'quack:Dependencies/CryptoSwift/quack.yaml:clean',
+      'quack:Dependencies/GzipSwift/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]

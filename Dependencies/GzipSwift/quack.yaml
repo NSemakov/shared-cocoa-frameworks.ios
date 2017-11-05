@@ -1,0 +1,19 @@
+name: GzipSwift
+description: Swift framework that enables gzip/gunzip Data using zlib.
+
+modules:
+  4.0.2:
+    repository: https://github.com/1024jp/GzipSwift.git
+    tag: 4.0.2
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

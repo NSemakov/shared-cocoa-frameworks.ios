@@ -10,4 +10,5 @@ target 'DummyFramework' do
 
   pod 'Alamofire',   path: '../../Dependencies/Alamofire/Pod-4.5.1.podspec'
   pod 'CryptoSwift', path: '../../Dependencies/CryptoSwift/Pod-0.8.0.podspec'
+  pod 'GzipSwift',   path: '../../Dependencies/GzipSwift/Pod-4.0.2.podspec'
 end
