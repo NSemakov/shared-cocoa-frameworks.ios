@@ -1,0 +1,19 @@
+name: SwiftyJSON
+description: SwiftyJSON makes it easy to deal with JSON data in Swift.
+
+modules:
+  3.1.4:
+    repository: https://github.com/SwiftyJSON/SwiftyJSON.git
+    tag: 3.1.4
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]
