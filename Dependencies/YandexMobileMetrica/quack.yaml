@@ -1,0 +1,19 @@
+name: YandexMobileMetrica
+description: This library is designed to be a part of mobile apps and provide app usage stats to Yandex AppMetrica.
+
+modules:
+  2.9.4:
+    repository: https://github.com/yandexmobile/metrica-sdk-ios.git
+    tag: 2.9.4
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

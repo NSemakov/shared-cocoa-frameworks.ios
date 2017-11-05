@@ -14,4 +14,5 @@ target 'DummyFramework' do
   pod 'SQLCipher/standard',     path: '../../Dependencies/SQLCipher/Pod-3.4.1.podspec'
   pod 'SQLite.swift/SQLCipher', path: '../../Dependencies/SQLite.swift/Pod-0.11.4.podspec'
   pod 'SwiftyJSON',             path: '../../Dependencies/SwiftyJSON/Pod-3.1.4.podspec'
+  pod 'YandexMobileMetrica',    path: '../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec'
 end

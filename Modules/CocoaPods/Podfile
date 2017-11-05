@@ -14,4 +14,5 @@ target 'DummyFramework' do
   pod 'SQLCipher/standard',     '~> 3.4'
   pod 'SQLite.swift/SQLCipher', '~> 0.11'
   pod 'SwiftyJSON',             '~> 3.1'
+  pod 'YandexMobileMetrica',    '~> 2.9'
 end

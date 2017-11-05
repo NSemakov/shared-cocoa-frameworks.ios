@@ -10,6 +10,9 @@ PODS:
   - SQLite.swift/SQLCipher (0.11.4):
     - SQLCipher (>= 3.4.0)
   - SwiftyJSON (3.1.4)
+  - YandexMobileMetrica (2.9.4):
+    - YandexMobileMetrica/Static (= 2.9.4)
+  - YandexMobileMetrica/Static (2.9.4)
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.5.1.podspec`)
@@ -18,6 +21,7 @@ DEPENDENCIES:
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
   - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-3.1.4.podspec`)
+  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec`)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -32,6 +36,8 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/SQLite.swift/Pod-0.11.4.podspec
   SwiftyJSON:
     :path: ../../Dependencies/SwiftyJSON/Pod-3.1.4.podspec
+  YandexMobileMetrica:
+    :path: ../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec
 
 SPEC CHECKSUMS:
   Alamofire: af55e9878c319cf97151a0c2619d323c464958a5
@@ -40,7 +46,8 @@ SPEC CHECKSUMS:
   SQLCipher: fbdf4f2c53652da70cb240ecb45368bbbaa9496e
   SQLite.swift: d769a4dfedd775a238ee43eee129c32c094c2776
   SwiftyJSON: 476538a63c71d7de56014fbf6aa7051a9e8ea315
+  YandexMobileMetrica: 6d927cf1acba20fe9ee7777596bc974ef858341f
 
-PODFILE CHECKSUM: 990f840c3fd622e75019c57ef3a0f738170c271d
+PODFILE CHECKSUM: 4235785f190e00fd39be3cb433568a09cb15f4a0
 
 COCOAPODS: 1.4.0.beta.2
