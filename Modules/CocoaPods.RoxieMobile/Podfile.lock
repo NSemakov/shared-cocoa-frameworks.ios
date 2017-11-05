@@ -1,16 +1,21 @@
 PODS:
   - Alamofire (4.5.1)
+  - CryptoSwift (0.8.0)
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.5.1.podspec`)
+  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.0.podspec`)
 
 EXTERNAL SOURCES:
   Alamofire:
     :path: ../../Dependencies/Alamofire/Pod-4.5.1.podspec
+  CryptoSwift:
+    :path: ../../Dependencies/CryptoSwift/Pod-0.8.0.podspec
 
 SPEC CHECKSUMS:
   Alamofire: af55e9878c319cf97151a0c2619d323c464958a5
+  CryptoSwift: 3c1a0034f30c3d0b8f34acadd858c09e2320b7d9
 
-PODFILE CHECKSUM: b95e2968e9e278134e9e3d72f3c771ed11340bd5
+PODFILE CHECKSUM: cdbfe2b3053b456bf63cd492e47cee0e89c01416
 
 COCOAPODS: 1.4.0.beta.2
