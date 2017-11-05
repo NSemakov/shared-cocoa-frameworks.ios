@@ -1,0 +1,10 @@
+source 'https://github.com/roxiemobile/shared-cocoa-frameworks.ios.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+workspace 'DummyProject/Dummy.xcworkspace'
+
+target 'DummyFramework' do
+  project 'DummyProject/Dummy.xcodeproj'
+end

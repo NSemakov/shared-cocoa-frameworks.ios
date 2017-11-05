@@ -1,0 +1,100 @@
+# NAME=
+# SCHEME=
+# VERSION=
+
+XCWORKSPACE=DummyProject/Dummy.xcworkspace
+CONFIGURATION=Release
+SIMULATOR='platform=iOS Simulator,name=iPhone SE'
+
+FRAMEWORK_FOLDER=$(NAME).framework
+SWIFTMODULE_FOLDER=$(NAME).swiftmodule
+
+### Paths
+
+BUILD_PATH=$(PWD)/.build
+BUILD_PATH_SIMULATOR=$(BUILD_PATH)/$(CONFIGURATION)-iphonesimulator
+BUILD_PATH_IPHONE=$(BUILD_PATH)/$(CONFIGURATION)-iphoneos
+BUILD_PATH_UNIVERSAL=$(BUILD_PATH)/$(CONFIGURATION)-universal
+BUILD_PATH_UNIVERSAL_FRAMEWORK_FOLDER=$(BUILD_PATH_UNIVERSAL)/$(FRAMEWORK_FOLDER)
+BUILD_PATH_UNIVERSAL_FRAMEWORK_BINARY=$(BUILD_PATH_UNIVERSAL_FRAMEWORK_FOLDER)/$(NAME)
+
+DISTRIBUTION_PATH=$(PWD)/.build
+ZIPBALL_NAME=$(SCHEME)-$(VERSION).zip
+ZIPBALL_PATH=$(DISTRIBUTION_PATH)/$(ZIPBALL_NAME)
+
+### Colors
+
+RESET=\033[0;39m
+RED=\033[0;31m
+GREEN=\033[0;32m
+
+### Actions
+
+.PHONY: default archive clean test build validate zip
+
+default: test
+
+archive: clean test build validate zip
+
+test:
+#   xcodebuild -project $(XCWORKSPACE) \
+#				  -scheme $(SCHEME) \
+#				  -sdk iphonesimulator \
+#				  -destination $(SIMULATOR) \
+#				  clean test
+
+build: clean
+
+	xcodebuild -workspace $(XCWORKSPACE) \
+					-scheme $(SCHEME) \
+					-sdk iphonesimulator \
+					-configuration Release \
+					-arch i386 -arch x86_64 \
+					IPHONEOS_DEPLOYMENT_TARGET=8.0 \
+					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_SIMULATOR) \
+					SYMROOT=$(BUILD_PATH) \
+					clean build
+
+	xcodebuild -workspace $(XCWORKSPACE) \
+					-scheme $(SCHEME) \
+					-sdk iphoneos \
+					-configuration $(CONFIGURATION) \
+					-arch arm64 -arch armv7 -arch armv7s \
+					IPHONEOS_DEPLOYMENT_TARGET=8.0 \
+					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_IPHONE) \
+					SYMROOT=$(BUILD_PATH) \
+					clean build
+
+#	rm -rf $(BUILD_PATH_UNIVERSAL)
+	mkdir -p $(BUILD_PATH_UNIVERSAL)
+
+	cp -Rv $(BUILD_PATH_SIMULATOR)/$(FRAMEWORK_FOLDER) $(BUILD_PATH_UNIVERSAL)
+	cp -Rv $(BUILD_PATH_IPHONE)/$(FRAMEWORK_FOLDER) $(BUILD_PATH_UNIVERSAL)
+
+	lipo $(BUILD_PATH_SIMULATOR)/$(FRAMEWORK_FOLDER)/$(NAME) $(BUILD_PATH_IPHONE)/$(FRAMEWORK_FOLDER)/$(NAME) -create -output $(BUILD_PATH_UNIVERSAL_FRAMEWORK_BINARY)
+
+validate: validate.i386 validate.x86_64 validate.armv7 validate.armv7s validate.arm64
+
+validate.%:
+	@printf "Validating $*... "
+	@lipo -info $(BUILD_PATH_UNIVERSAL_FRAMEWORK_BINARY) | grep -q '$*' && echo "$(GREEN)Passed$(RESET)" || (echo "$(RED)Failed$(RESET)"; exit 1)
+
+zip:
+	mkdir -p $(DISTRIBUTION_PATH)
+	cd $(BUILD_PATH_UNIVERSAL) && zip -r -FS $(DISTRIBUTION_PATH)/$(ZIPBALL_NAME) $(FRAMEWORK_FOLDER)
+
+clean:
+#	rm -rf $(BUILD_PATH)
+#	rm -rf $(DISTRIBUTION_PATH)
+
+	rm -rf $(BUILD_PATH_SIMULATOR)/$(FRAMEWORK_FOLDER)
+	rm -rf $(BUILD_PATH_SIMULATOR)/$(SWIFTMODULE_FOLDER)
+	rm -rf $(BUILD_PATH_SIMULATOR)/lib$(NAME).a
+
+	rm -rf $(BUILD_PATH_IPHONE)/$(FRAMEWORK_FOLDER) \
+	rm -rf $(BUILD_PATH_IPHONE)/$(SWIFTMODULE_FOLDER)
+	rm -rf $(BUILD_PATH_IPHONE)/lib$(NAME).a
+
+	rm -rf $(BUILD_PATH_UNIVERSAL_FRAMEWORK_FOLDER)
+
+	rm -rf $(ZIPBALL_PATH)

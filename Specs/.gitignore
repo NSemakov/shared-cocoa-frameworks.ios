@@ -1,0 +1,5 @@
+# Ignore all
+*/*/**
+
+# Add some items back
+!*.podspec

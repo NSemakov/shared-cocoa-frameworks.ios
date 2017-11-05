@@ -1,0 +1,12 @@
+name: Dependencies
+version: 0.1.0
+
+profiles:
+  init:
+    tasks: [
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      'cmd:rm -rf ./.quack/',
+    ]

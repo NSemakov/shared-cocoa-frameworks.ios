@@ -1,0 +1,12 @@
+# AppCode project
+.idea/
+
+# Xcode project
+xcuserdata/
+.LSOverride
+
+# Build results
+.build/
+
+# Other
+.DS_Store
