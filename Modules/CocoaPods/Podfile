@@ -7,4 +7,6 @@ workspace 'DummyProject/Dummy.xcworkspace'
 
 target 'DummyFramework' do
   project 'DummyProject/Dummy.xcodeproj'
+
+  pod 'Alamofire', '~> 4.5'
 end

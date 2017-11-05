@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 3ec87480bb06c436702dace8064aa90447a01d54
+PODS:
+  - Alamofire (4.5.1)
+
+DEPENDENCIES:
+  - Alamofire (from `../../Dependencies/Alamofire/Pod-4.5.1.podspec`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :path: ../../Dependencies/Alamofire/Pod-4.5.1.podspec
+
+SPEC CHECKSUMS:
+  Alamofire: af55e9878c319cf97151a0c2619d323c464958a5
+
+PODFILE CHECKSUM: b95e2968e9e278134e9e3d72f3c771ed11340bd5
 
 COCOAPODS: 1.4.0.beta.2

@@ -1,0 +1,19 @@
+name: Alamofire
+description: Elegant HTTP Networking in Swift.
+
+modules:
+  4.5.1:
+    repository: https://github.com/Alamofire/Alamofire.git
+    tag: 4.5.1
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

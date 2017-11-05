@@ -4,9 +4,11 @@ version: 0.1.0
 profiles:
   init:
     tasks: [
+      'quack:Dependencies/Alamofire/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
   clean:
     tasks: [
+      'quack:Dependencies/Alamofire/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]
