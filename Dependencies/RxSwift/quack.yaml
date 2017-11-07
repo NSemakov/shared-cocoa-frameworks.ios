@@ -1,0 +1,19 @@
+name: RxSwift
+description: Swift version of the Reactive Extensions (Rx) - a library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators.
+
+modules:
+  4.0.0:
+    repository: https://github.com/ReactiveX/RxSwift.git
+    tag: 4.0.0
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

@@ -11,6 +11,7 @@ profiles:
       'quack:Dependencies/SQLite.swift/quack.yaml:init',
       'quack:Dependencies/SwiftyJSON/quack.yaml:init',
       'quack:Dependencies/YandexMobileMetrica/quack.yaml:init',
+      'quack:Dependencies/RxSwift/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
   clean:
@@ -22,5 +23,6 @@ profiles:
       'quack:Dependencies/SQLite.swift/quack.yaml:clean',
       'quack:Dependencies/SwiftyJSON/quack.yaml:clean',
       'quack:Dependencies/YandexMobileMetrica/quack.yaml:clean',
+      'quack:Dependencies/RxSwift/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]
