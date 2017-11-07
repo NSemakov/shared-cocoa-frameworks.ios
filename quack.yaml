@@ -7,11 +7,11 @@ profiles:
       'quack:Dependencies/Alamofire/quack.yaml:init',
       'quack:Dependencies/CryptoSwift/quack.yaml:init',
       'quack:Dependencies/GzipSwift/quack.yaml:init',
+      'quack:Dependencies/RxSwift/quack.yaml:init',
       'quack:Dependencies/SQLCipher/quack.yaml:init',
       'quack:Dependencies/SQLite.swift/quack.yaml:init',
       'quack:Dependencies/SwiftyJSON/quack.yaml:init',
       'quack:Dependencies/YandexMobileMetrica/quack.yaml:init',
-      'quack:Dependencies/RxSwift/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
   clean:
@@ -19,10 +19,10 @@ profiles:
       'quack:Dependencies/Alamofire/quack.yaml:clean',
       'quack:Dependencies/CryptoSwift/quack.yaml:clean',
       'quack:Dependencies/GzipSwift/quack.yaml:clean',
+      'quack:Dependencies/RxSwift/quack.yaml:clean',
       'quack:Dependencies/SQLCipher/quack.yaml:clean',
       'quack:Dependencies/SQLite.swift/quack.yaml:clean',
       'quack:Dependencies/SwiftyJSON/quack.yaml:clean',
       'quack:Dependencies/YandexMobileMetrica/quack.yaml:clean',
-      'quack:Dependencies/RxSwift/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]

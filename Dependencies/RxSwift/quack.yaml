@@ -1,5 +1,5 @@
 name: RxSwift
-description: Swift version of the Reactive Extensions (Rx) - a library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators.
+description: RxSwift is a Swift implementation of Reactive Extensions.
 
 modules:
   4.0.0:
