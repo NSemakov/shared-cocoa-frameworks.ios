@@ -36,12 +36,21 @@ Pod::Spec.new do |s|
 
   s.default_subspecs = 'Static'
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/RxSwift-4.0.4-Static.zip'
+    http: 'https://github.com/NSemakov/shared-cocoa-frameworks.ios/releases/download/0.0.1/RxSwift-4.0.0-Static.zip'
   }
 
   s.platform = :ios
   s.ios.deployment_target = '8.0'
   s.source_files = nil
+  s.exclude_files = nil
+
+  # Technical Q&A QA1881 v2 - Embedding Content with Swift in Objective-C
+  # @link https://pewpewthespells.com/blog/swift_and_objc.html
+
+  s.user_target_xcconfig = {
+    'SWIFT_STDLIB_PATH' => '${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}',
+    'OTHER_LDFLAGS' => '-L${SWIFT_STDLIB_PATH}'
+  }
 
   s.subspec 'Static' do |sc|
     sc.preserve_paths = 'RxSwift.framework/*'

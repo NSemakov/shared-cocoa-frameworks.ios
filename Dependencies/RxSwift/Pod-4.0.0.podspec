@@ -40,5 +40,6 @@ Pod::Spec.new do |s|
 
   cn = s.consumer(:ios)
   s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
   s.license = {}
 end

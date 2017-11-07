@@ -47,7 +47,7 @@ SPEC CHECKSUMS:
   Alamofire: af55e9878c319cf97151a0c2619d323c464958a5
   CryptoSwift: 3c1a0034f30c3d0b8f34acadd858c09e2320b7d9
   GzipSwift: a21504b80c2110696b661455893f41beb2014f31
-  RxSwift: 809bd91932e0e99cda256370ab84d8a7bb5dc94b
+  RxSwift: ade859dbaadbbcfa85b7cd12c53ce85b5cc86814
   SQLCipher: fbdf4f2c53652da70cb240ecb45368bbbaa9496e
   SQLite.swift: d769a4dfedd775a238ee43eee129c32c094c2776
   SwiftyJSON: 476538a63c71d7de56014fbf6aa7051a9e8ea315

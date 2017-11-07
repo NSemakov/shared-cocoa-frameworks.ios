@@ -11,9 +11,9 @@ target 'DummyFramework' do
   pod 'Alamofire',              path: '../../Dependencies/Alamofire/Pod-4.5.1.podspec'
   pod 'CryptoSwift',            path: '../../Dependencies/CryptoSwift/Pod-0.8.0.podspec'
   pod 'GzipSwift',              path: '../../Dependencies/GzipSwift/Pod-4.0.2.podspec'
+  pod 'RxSwift',                path: '../../Dependencies/RxSwift/Pod-4.0.0.podspec'
   pod 'SQLCipher/standard',     path: '../../Dependencies/SQLCipher/Pod-3.4.1.podspec'
   pod 'SQLite.swift/SQLCipher', path: '../../Dependencies/SQLite.swift/Pod-0.11.4.podspec'
   pod 'SwiftyJSON',             path: '../../Dependencies/SwiftyJSON/Pod-3.1.4.podspec'
   pod 'YandexMobileMetrica',    path: '../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec'
-  pod 'RxSwift',                path: '../../Dependencies/RxSwift/Pod-4.0.0.podspec'
 end
