@@ -1,0 +1,19 @@
+name: RxDataSources
+description: This is a collection of reactive data sources for UITableView and UICollectionView.
+
+modules:
+  3.0.1:
+    repository: https://github.com/RxSwiftCommunity/RxDataSources.git
+    tag: 3.0.1
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

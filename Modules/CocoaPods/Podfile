@@ -10,9 +10,10 @@ target 'DummyFramework' do
 
   pod 'Alamofire',              '~> 4.5'
   pod 'CryptoSwift',            '~> 0.8'
-  pod 'Differentiator',         '~> 3.0'
+# pod 'Differentiator',         '~> 3.0'
   pod 'GzipSwift',              '~> 4.0'
-  pod 'RxCocoa',                '~> 4.0'  # RxSwift
+# pod 'RxCocoa',                '~> 4.0'  # RxSwift
+  pod 'RxDataSources',          '~> 3.0'  # Differentiator, RxCocoa
 # pod 'RxSwift',                '~> 4.0'
   pod 'SQLCipher/standard',     '~> 3.4'
   pod 'SQLite.swift/SQLCipher', '~> 0.11'
