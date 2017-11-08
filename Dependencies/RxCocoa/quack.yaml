@@ -1,0 +1,19 @@
+name: RxCocoa
+description: RxSwift Cocoa extensions.
+
+modules:
+  4.0.0:
+    repository: https://github.com/ReactiveX/RxSwift.git
+    tag: 4.0.0
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

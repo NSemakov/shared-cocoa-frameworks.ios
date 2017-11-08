@@ -1,0 +1,9 @@
+module RxCocoaRuntime {
+  header "4.0.0/RxCocoa/RxCocoa.h"
+  header "4.0.0/RxCocoa/Runtime/include/_RX.h"
+  header "4.0.0/RxCocoa/Runtime/include/_RXDelegateProxy.h"
+  header "4.0.0/RxCocoa/Runtime/include/_RXKVOObserver.h"
+  header "4.0.0/RxCocoa/Runtime/include/_RXObjCRuntime.h"
+  header "4.0.0/RxCocoa/Runtime/include/RxCocoaRuntime.h"
+  export *
+}
