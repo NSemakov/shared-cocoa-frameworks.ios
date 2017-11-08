@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.5.1)
   - CryptoSwift (0.8.0)
+  - Differentiator (3.0.1)
   - GzipSwift (4.0.2)
   - RxSwift (4.0.0)
   - SQLCipher (3.4.1):
@@ -18,6 +19,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.5.1.podspec`)
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.0.podspec`)
+  - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.1.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.2.podspec`)
   - RxSwift (from `../../Dependencies/RxSwift/Pod-4.0.0.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
@@ -30,6 +32,8 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/Alamofire/Pod-4.5.1.podspec
   CryptoSwift:
     :path: ../../Dependencies/CryptoSwift/Pod-0.8.0.podspec
+  Differentiator:
+    :path: ../../Dependencies/Differentiator/Pod-3.0.1.podspec
   GzipSwift:
     :path: ../../Dependencies/GzipSwift/Pod-4.0.2.podspec
   RxSwift:
@@ -46,6 +50,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: af55e9878c319cf97151a0c2619d323c464958a5
   CryptoSwift: 3c1a0034f30c3d0b8f34acadd858c09e2320b7d9
+  Differentiator: f0fb3db76483721d5acf309975959b574f349335
   GzipSwift: a21504b80c2110696b661455893f41beb2014f31
   RxSwift: d894bb20c06fcfa561a68db186438535f802c868
   SQLCipher: fbdf4f2c53652da70cb240ecb45368bbbaa9496e
@@ -53,6 +58,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 476538a63c71d7de56014fbf6aa7051a9e8ea315
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: d593a25752d5bb05c2a13e5fddb7fe65593925de
+PODFILE CHECKSUM: 5859dda8264ff10e311e06e49e13043d50dadc7e
 
 COCOAPODS: 1.4.0.beta.2
