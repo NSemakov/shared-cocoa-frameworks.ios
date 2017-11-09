@@ -1,18 +1,19 @@
 PODS:
   - Alamofire (4.5.1)
   - CryptoSwift (0.8.0)
-  - Differentiator (3.0.2)
+  - Differentiator (3.0.1)
   - GzipSwift (4.0.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.2):
+  - RxDataSources (3.0.1):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
+  - Siren (3.1.5)
   - SQLCipher (3.4.1):
     - SQLCipher/standard (= 3.4.1)
   - SQLCipher/common (3.4.1)
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - GzipSwift (~> 4.0)
   - R.swift (~> 4.0)
   - RxDataSources (~> 3.0)
+  - Siren (~> 3.1)
   - SQLCipher/standard (~> 3.4)
   - SQLite.swift/SQLCipher (~> 0.11)
   - SwiftyJSON (~> 3.1)
@@ -39,18 +41,19 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
   GzipSwift: 3faa3c3aece7cb0b0112c5e0c2f433164f683ae9
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxDataSources: 098b7e62b6316313b14d6bf594e3f4f4f62a238a
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  Siren: f826e7c61cddb01459d050d68e94cfc18dcb2ebb
   SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   YandexMobileMetrica: 8f150e2d04cf34e3af9506a75310a6229bcf05c5
 
-PODFILE CHECKSUM: a99ce15c04ae29ebbe70a35ff12f25d9949b657e
+PODFILE CHECKSUM: 656c478aa30d6415942ab9f070d191f0ddd9bc35
 
 COCOAPODS: 1.4.0.beta.2
