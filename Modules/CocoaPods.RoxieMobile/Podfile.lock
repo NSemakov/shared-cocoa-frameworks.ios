@@ -3,7 +3,7 @@ PODS:
   - CryptoSwift (0.8.0)
   - Differentiator (3.0.1)
   - GzipSwift (4.0.2)
-  - R.swift.Library (4.0.1)
+  - R.swift.Library (4.0.0)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxDataSources (3.0.1):
@@ -28,7 +28,7 @@ DEPENDENCIES:
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.0.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.1.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.2.podspec`)
-  - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.1.podspec`)
+  - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0.podspec`)
   - RxCocoa (from `../../Dependencies/RxCocoa/Pod-4.0.0.podspec`)
   - RxDataSources (from `../../Dependencies/RxDataSources/Pod-3.0.1.podspec`)
   - RxSwift (from `../../Dependencies/RxSwift/Pod-4.0.0.podspec`)
@@ -47,7 +47,7 @@ EXTERNAL SOURCES:
   GzipSwift:
     :path: ../../Dependencies/GzipSwift/Pod-4.0.2.podspec
   R.swift.Library:
-    :path: ../../Dependencies/R.swift.Library/Pod-4.0.1.podspec
+    :path: ../../Dependencies/R.swift.Library/Pod-4.0.0.podspec
   RxCocoa:
     :path: ../../Dependencies/RxCocoa/Pod-4.0.0.podspec
   RxDataSources:
@@ -68,7 +68,7 @@ SPEC CHECKSUMS:
   CryptoSwift: 3c1a0034f30c3d0b8f34acadd858c09e2320b7d9
   Differentiator: e3a7b6911da702d76e5fc912ddbff397976a3a1f
   GzipSwift: a21504b80c2110696b661455893f41beb2014f31
-  R.swift.Library: e83458162b26eaffa949c2ccb390f614be8eae31
+  R.swift.Library: 07ca428b5e0d9d77c5c334efa96251f68682640d
   RxCocoa: 1766dc6e164cdf65e0f9dff072d9c57a781d1dcb
   RxDataSources: 8b5de35dc7f5206a4dd98b3066b2949c0998d9f2
   RxSwift: d894bb20c06fcfa561a68db186438535f802c868
@@ -77,6 +77,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 476538a63c71d7de56014fbf6aa7051a9e8ea315
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: e3d5c081b91a7d6e91bd491c2e5e6ab942286caf
+PODFILE CHECKSUM: e9c8583acef469e0e16a20231124c89b9335994e
 
 COCOAPODS: 1.4.0.beta.2

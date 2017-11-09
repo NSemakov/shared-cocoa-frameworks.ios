@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |spec|
   spec.name         = "R.swift.Library"
-  spec.version      = "4.0.1"
+  spec.version      = "4.0.0"
   spec.license      = "MIT"
 
   spec.summary      = "Companion library for R.swift, featuring types used to type resources"
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://twitter.com/mac_cain13"
 
   spec.requires_arc = true
-  spec.source          = { :git => "https://github.com/NSemakov/R.swift.Library.git", :tag => "v#{spec.version}" }
+  spec.source          = { :git => "https://github.com/mac-cain13/R.swift.Library.git", :tag => "v#{spec.version}" }
 
   spec.ios.deployment_target     = '8.0'
   spec.tvos.deployment_target    = '9.0'
@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
 
   spec.default_subspecs = 'Static'
   spec.source = {
-    http: 'https://github.com/NSemakov/shared-cocoa-frameworks.ios/releases/download/0.0.1/R.swift.Library-4.0.1.zip'
+    http: 'https://github.com/NSemakov/shared-cocoa-frameworks.ios/releases/download/0.0.1/R.swift.Library-4.0.0.zip'
   }
 
   spec.platform = :ios
