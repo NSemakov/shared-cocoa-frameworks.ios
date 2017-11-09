@@ -33,7 +33,6 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '8.0'
   spec.source_files = nil
-  spec.exclude_files = nil
 
   spec.subspec 'Static' do |sc|
     sc.preserve_paths = 'Rswift.framework/*'
