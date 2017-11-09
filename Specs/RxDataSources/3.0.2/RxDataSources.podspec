@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name             = "RxDataSources"
-  s.version          = "3.0.1"
+  s.version          = "3.0.2"
   s.summary          = "This is a collection of reactive data sources for UITableView and UICollectionView."
   s.description      = <<-DESC
 This is a collection of reactive data sources for UITableView and UICollectionView.
@@ -46,11 +46,25 @@ data
 
 # MARK: - iOS Static Framework
 
+  s.default_subspecs = 'Static'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/RxDataSources+Differentiator+RxCocoa-3.0.2-Static.zip',
+    sha256: '11a4e4e04e10cb22942d918cbb1c36ac0f6f251cd51c9a1c317b3e09633903cd'
+  }
+
   s.platform = :ios
   s.ios.deployment_target = '8.0'
-  s.static_framework = true
+  s.source_files = nil
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.license = {}
+  s.subspec 'Static' do |sc|
+    sc.preserve_paths = 'RxDataSources.framework/*'
+    sc.source_files = 'RxDataSources.framework/Headers/*.h'
+    sc.public_header_files = 'RxDataSources.framework/Headers/*.h'
+    sc.vendored_frameworks = 'RxDataSources.framework'
+
+    # Dependencies
+    sc.dependency 'Differentiator/Static', '~> 3.0.2'
+    sc.dependency 'RxSwift/Static', '~> 4.0.0'
+    sc.dependency 'RxCocoa/Static', '~> 4.0.0'
+  end
 end

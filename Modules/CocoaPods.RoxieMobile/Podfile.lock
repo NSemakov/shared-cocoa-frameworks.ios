@@ -6,7 +6,7 @@ PODS:
   - R.swift.Library (4.0.0)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.1):
+  - RxDataSources (3.0.2):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
@@ -30,7 +30,7 @@ DEPENDENCIES:
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.2.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec`)
   - RxCocoa (from `../../Dependencies/RxCocoa/Pod-4.0.0.podspec`)
-  - RxDataSources (from `../../Dependencies/RxDataSources/Pod-3.0.1.podspec`)
+  - RxDataSources (from `../../Dependencies/RxDataSources/Pod-3.0.2.podspec`)
   - RxSwift (from `../../Dependencies/RxSwift/Pod-4.0.0.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
@@ -51,7 +51,7 @@ EXTERNAL SOURCES:
   RxCocoa:
     :path: ../../Dependencies/RxCocoa/Pod-4.0.0.podspec
   RxDataSources:
-    :path: ../../Dependencies/RxDataSources/Pod-3.0.1.podspec
+    :path: ../../Dependencies/RxDataSources/Pod-3.0.2.podspec
   RxSwift:
     :path: ../../Dependencies/RxSwift/Pod-4.0.0.podspec
   SQLCipher:
@@ -70,13 +70,13 @@ SPEC CHECKSUMS:
   GzipSwift: a21504b80c2110696b661455893f41beb2014f31
   R.swift.Library: 9ae309b3d6914d072e547824b3b14da9481a4e7b
   RxCocoa: 1766dc6e164cdf65e0f9dff072d9c57a781d1dcb
-  RxDataSources: 8b5de35dc7f5206a4dd98b3066b2949c0998d9f2
+  RxDataSources: 881b128d6a31c095ad0e2fe9ed2a1994cf010dea
   RxSwift: d894bb20c06fcfa561a68db186438535f802c868
   SQLCipher: fbdf4f2c53652da70cb240ecb45368bbbaa9496e
   SQLite.swift: d769a4dfedd775a238ee43eee129c32c094c2776
   SwiftyJSON: 476538a63c71d7de56014fbf6aa7051a9e8ea315
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: e4959e388523a1d03dc09728063f6ea052bdb9b6
+PODFILE CHECKSUM: d6b1a507ca45ffc341fb3df66fada12ccad81b7a
 
 COCOAPODS: 1.4.0.beta.2
