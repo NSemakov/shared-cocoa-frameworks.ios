@@ -3,6 +3,8 @@ PODS:
   - CryptoSwift (0.8.0)
   - Differentiator (3.0.1)
   - GzipSwift (4.0.2)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
@@ -27,7 +29,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.5)
   - CryptoSwift (~> 0.8)
   - GzipSwift (~> 4.0)
-  - R.swift.Library (~> 4.0)
+  - R.swift (~> 4.0)
   - RxDataSources (~> 3.0)
   - SQLCipher/standard (~> 3.4)
   - SQLite.swift/SQLCipher (~> 0.11)
@@ -39,6 +41,7 @@ SPEC CHECKSUMS:
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
   Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
   GzipSwift: 3faa3c3aece7cb0b0112c5e0c2f433164f683ae9
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxDataSources: 098b7e62b6316313b14d6bf594e3f4f4f62a238a
@@ -48,6 +51,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   YandexMobileMetrica: 8f150e2d04cf34e3af9506a75310a6229bcf05c5
 
-PODFILE CHECKSUM: 8c0b0801131a1cdec876879ac81378df63783665
+PODFILE CHECKSUM: 01de099d6b37a2e7625a0c0b7ba8fe6065c954e2
 
 COCOAPODS: 1.4.0.beta.2
