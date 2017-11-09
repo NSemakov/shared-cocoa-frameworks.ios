@@ -1,0 +1,19 @@
+name: R.swift.Library
+description: Companion library for R.swift, featuring types used to type resources.
+
+modules:
+  4.0.1:
+    repository: https://github.com/NSemakov/R.swift.Library.git
+    tag: v4.0.1
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

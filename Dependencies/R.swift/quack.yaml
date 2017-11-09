@@ -1,0 +1,19 @@
+name: R.swift
+description: Get strong typed, autocompleted resources like images, fonts and segues in Swift projects.
+
+modules:
+  4.0.0:
+    repository: https://github.com/mac-cain13/R.swift/releases/download/v4.0.0/rswift-4.0.0.zip
+    tag: 4.0.0
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]
