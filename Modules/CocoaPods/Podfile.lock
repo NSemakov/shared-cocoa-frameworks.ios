@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.5.1)
   - CryptoSwift (0.8.0)
-  - Differentiator (3.0.1)
+  - Differentiator (3.0.2)
   - GzipSwift (4.0.2)
   - R.swift.Library (4.0.0)
   - RxCocoa (4.0.0):
@@ -37,7 +37,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
-  Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   GzipSwift: 3faa3c3aece7cb0b0112c5e0c2f433164f683ae9
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
