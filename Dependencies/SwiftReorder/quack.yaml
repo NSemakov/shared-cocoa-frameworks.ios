@@ -1,0 +1,19 @@
+name: SwiftReorder
+description: Easy drag-and-drop reordering for UITableViews.
+
+modules:
+  3.0.0:
+    repository: https://github.com/adamshin/SwiftReorder.git
+    tag: 3.0.0
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]
