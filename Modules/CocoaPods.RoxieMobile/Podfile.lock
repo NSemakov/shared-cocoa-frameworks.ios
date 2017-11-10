@@ -13,6 +13,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
+  - Siren (3.1.6)
   - SlideMenuControllerSwift (3.0.2)
   - SQLCipher (3.4.1):
     - SQLCipher/standard (= 3.4.1)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - RxCocoa (from `../../Dependencies/RxCocoa/Pod-4.0.0.podspec`)
   - RxDataSources (from `../../Dependencies/RxDataSources/Pod-3.0.2.podspec`)
   - RxSwift (from `../../Dependencies/RxSwift/Pod-4.0.0.podspec`)
+  - Siren (from `../../Dependencies/Siren/Pod-3.1.6.podspec`)
   - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-3.0.2-patch.1.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
@@ -61,6 +63,8 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/RxDataSources/Pod-3.0.2.podspec
   RxSwift:
     :path: ../../Dependencies/RxSwift/Pod-4.0.0.podspec
+  Siren:
+    :path: ../../Dependencies/Siren/Pod-3.1.6.podspec
   SlideMenuControllerSwift:
     :path: ../../Dependencies/SlideMenuControllerSwift/Pod-3.0.2-patch.1.podspec
   SQLCipher:
@@ -82,12 +86,13 @@ SPEC CHECKSUMS:
   RxCocoa: 1766dc6e164cdf65e0f9dff072d9c57a781d1dcb
   RxDataSources: 881b128d6a31c095ad0e2fe9ed2a1994cf010dea
   RxSwift: d894bb20c06fcfa561a68db186438535f802c868
+  Siren: b12865adfcb3ffef6b10ef96f167ac5939f5a307
   SlideMenuControllerSwift: 522cd9c6e6115edc921fe86ce09439c045c00c8e
   SQLCipher: fbdf4f2c53652da70cb240ecb45368bbbaa9496e
   SQLite.swift: d769a4dfedd775a238ee43eee129c32c094c2776
   SwiftyJSON: 476538a63c71d7de56014fbf6aa7051a9e8ea315
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: 91103ebff5a18ec01980107179c6a875bfb0311c
+PODFILE CHECKSUM: 0710f556d2d5443804ebf08ddbf3979153848884
 
 COCOAPODS: 1.4.0.beta.2
