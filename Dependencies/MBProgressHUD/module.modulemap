@@ -1,0 +1,4 @@
+module MBProgressHUDObjc {
+  header "1.0.0/MBProgressHUD.h"
+  export *
+}
