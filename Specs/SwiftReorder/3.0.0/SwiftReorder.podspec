@@ -24,6 +24,9 @@ Pod::Spec.new do |s|
   s.source_files = nil
 
   s.subspec 'Static' do |sc|
+    sc.preserve_paths = 'SwiftReorder.framework/*'
     sc.source_files = 'SwiftReorder.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftReorder.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftReorder.framework'
   end
 end
