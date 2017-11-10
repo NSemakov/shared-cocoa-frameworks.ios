@@ -1,0 +1,19 @@
+name: SlideMenuControllerSwift
+description: iOS Slide View based on iQON, Feedly, Google+, Ameba iPhone app.
+
+modules:
+  3.0.2:
+    repository: https://github.com/NSemakov/SlideMenuControllerSwift.git
+    tag: 3.0.2-patch.1
+
+profiles:
+  init:
+    tasks: [
+      'modules',
+      'cmd:rm -rf ./.quack/',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'cmd:rm -rf ./.quack/',
+    ]

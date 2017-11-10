@@ -13,6 +13,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
+  - SlideMenuControllerSwift (3.0.2)
   - SQLCipher (3.4.1):
     - SQLCipher/standard (= 3.4.1)
   - SQLCipher/common (3.4.1)
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - GzipSwift (~> 4.0)
   - R.swift (~> 4.0)
   - RxDataSources (~> 3.0)
+  - SlideMenuControllerSwift (~> 3.0)
   - SQLCipher/standard (~> 3.4)
   - SQLite.swift/SQLCipher (~> 0.11)
   - SwiftyJSON (~> 3.1)
@@ -46,11 +48,12 @@ SPEC CHECKSUMS:
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SlideMenuControllerSwift: 16001e1fd9963fd089fa6c91dbe18d4c148f0ce9
   SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   YandexMobileMetrica: 8f150e2d04cf34e3af9506a75310a6229bcf05c5
 
-PODFILE CHECKSUM: a99ce15c04ae29ebbe70a35ff12f25d9949b657e
+PODFILE CHECKSUM: 0d4c6f6c2527c7e40560064f2d21b4db73bd77ee
 
 COCOAPODS: 1.4.0.beta.2

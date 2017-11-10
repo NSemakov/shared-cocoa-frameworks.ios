@@ -1,0 +1,41 @@
+# coding: utf-8
+Pod::Spec.new do |s|
+  s.name         = "SlideMenuControllerSwift"
+  s.version      = "3.0.2"
+  s.summary      = "iOS Slide View based on iQON, Feedly, Google+, Ameba iPhone app."
+  s.homepage     = "https://github.com/dekatotoro/SlideMenuControllerSwift"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author             = { "Yuji Hato" => "hatoyujidev@gmail.com" }
+  s.social_media_url   = "https://twitter.com/dekatotoro"
+  s.platform     = :ios
+  s.ios.deployment_target = "8.0"
+  s.source       = { :git => "https://github.com/dekatotoro/SlideMenuControllerSwift.git", :tag => s.version }
+  s.source_files  = "Source/*.swift"
+  s.requires_arc = true
+
+# MARK: - iOS Static Framework
+
+  s.default_subspecs = 'Static'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/SlideMenuControllerSwift-3.0.2-Static.zip'
+  }
+
+  s.platform = :ios
+  s.ios.deployment_target = '8.0'
+  s.source_files = nil
+
+  # Technical Q&A QA1881 v2 - Embedding Content with Swift in Objective-C
+  # @link https://pewpewthespells.com/blog/swift_and_objc.html
+
+  s.user_target_xcconfig = {
+    'SWIFT_STDLIB_PATH' => '${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}',
+    'OTHER_LDFLAGS' => '-L${SWIFT_STDLIB_PATH}'
+  }
+
+  s.subspec 'Static' do |sc|
+    sc.preserve_paths = 'SlideMenuControllerSwift.framework/*'
+    sc.source_files = 'SlideMenuControllerSwift.framework/Headers/*.h'
+    sc.public_header_files = 'SlideMenuControllerSwift.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SlideMenuControllerSwift.framework'
+  end
+end
