@@ -1,0 +1,9 @@
+module PureLayoutObjc {
+  header "3.0.2/PureLayout/PureLayout/ALView+PureLayout.h"
+  header "3.0.2/PureLayout/PureLayout/NSArray+PureLayout.h"
+  header "3.0.2/PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"
+  header "3.0.2/PureLayout/PureLayout/PureLayout.h"
+  header "3.0.2/PureLayout/PureLayout/PureLayout+Internal.h"
+  header "3.0.2/PureLayout/PureLayout/PureLayoutDefines.h"
+  export *
+}
