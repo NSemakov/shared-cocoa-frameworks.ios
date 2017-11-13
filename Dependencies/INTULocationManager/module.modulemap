@@ -1,0 +1,9 @@
+module INTULocationManagerObjc {
+  header "4.2.0/LocationManager/INTULocationManager/INTUHeadingRequest.h"
+  header "4.2.0/LocationManager/INTULocationManager/INTULocationManager.h"
+  header "4.2.0/LocationManager/INTULocationManager/INTULocationManager+Internal.h"
+  header "4.2.0/LocationManager/INTULocationManager/INTULocationRequest.h"
+  header "4.2.0/LocationManager/INTULocationManager/INTULocationRequestDefines.h"
+  header "4.2.0/LocationManager/INTULocationManager/INTURequestIDGenerator.h"
+  export *
+}
