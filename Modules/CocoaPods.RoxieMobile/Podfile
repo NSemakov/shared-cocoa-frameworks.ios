@@ -12,6 +12,7 @@ target 'DummyFramework' do
   pod 'CryptoSwift',              path: '../../Dependencies/CryptoSwift/Pod-0.8.0.podspec'
   pod 'Differentiator',           path: '../../Dependencies/Differentiator/Pod-3.0.2.podspec'
   pod 'GzipSwift',                path: '../../Dependencies/GzipSwift/Pod-4.0.2.podspec'
+  pod 'KeychainAccess',           path: '../../Dependencies/KeychainAccess/Pod-3.1.0.podspec'
   pod 'R.swift',                  path: '../../Dependencies/R.swift/Pod-4.0.0.podspec'
   pod 'R.swift.Library',          path: '../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec'
   pod 'RxCocoa',                  path: '../../Dependencies/RxCocoa/Pod-4.0.0.podspec'

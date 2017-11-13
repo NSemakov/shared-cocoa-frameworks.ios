@@ -12,6 +12,7 @@ target 'DummyFramework' do
   pod 'CryptoSwift',              '~> 0.8'
 # pod 'Differentiator',           '~> 3.0'
   pod 'GzipSwift',                '~> 4.0'
+  pod 'KeychainAccess',           '~> 3.1'
   pod 'R.swift',                  '~> 4.0'  # R.swift.Library
 # pod 'R.swift.Library',          '~> 4.0'
 # pod 'RxCocoa',                  '~> 4.0'  # RxSwift
